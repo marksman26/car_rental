@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KtFBk3yiDbpedkOa_dmXOmcJhL-hQjCqoYVWmBcS02dN_vPa7P2vXNluxaeSW5q_m1I3BclzVfT7Fa83v1PCJX0HoqlnaRWcyFXS3erKjeiLwONezUxVwd44ccpvk7HfOpIJ1FgcjnXAv-GShdwofIBkCoJiqZuJuS5G2_LcPjh9TKgR6Dfx0uaW8N1gAZEkZxwRtLUUuLLwVtSHzFfVHKbFuxwE9Zu1aTl-mju1n5gsF_p82L__KpIGnrE38wR8ZgZJ4JZxI5s9XMtCj9q1BYBCbwZgQhRBEQl8DCbbNYohMuN24QTdD6GNwOVn16lQtcsCKpToumOH0QbmpkBepitXgT6JFsTMp5HpVHYSmz-c3hhlwcdyZerI-EDFY-hS1pTj0XWihW1nVPKsNwpArQrSvFoygTqC_uv7mt89zN-VLjyw__fnCRpNPXGkaxh1uO7Y056M6AzPsvsz6CX3Iwl74m_-D8S30bJcArsha1pnDQO0roEr1BVGVB-NiSSk" charset="UTF-8"></script><style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+:root
+{
+	--main-color:;
+	--color:grey;
+	--bg:black;
+	--border:.1rem solid rgba (255,255,255,.3);
+}
+
+*
+{
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: .2s linear;
+}
+
+html
+{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+}
+
+
+body
+{
+	background: var(--bg);
+}
+
+section
+{
+	padding: 2rem 7%;
+}
+
+.heading
+{
+	text-align: center;
+	color:white;
+	text-transform: uppercase;
+	padding-bottom: 3.5rem;
+	font-size: 4rem;
+}
+
+
+.header
+{
+	background:black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 7%;
+	border-bottom: var(--border);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+
+
+.header .navbar a
+{
+	margin: 0 12rem;
+	font-size: 1.8rem;
+	color:#fff;
+
+}
+
+.header .icons div
+{
+	color: #fff;
+	cursor: pointer;
+	font-size: 2.5rem;
+	margin-left: 2rem;
+}
+
+
+.home
+{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url(https://odishabytes.com/wp-content/uploads/2020/10/highest-selling-luxury-cars-in-india1-1200x900.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.home .content
+{
+	max-width: 60rem;
+}
+
+.home .content h3
+{
+	font-size: 6rem;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+
+}
+
+.home .content p
+{
+	font-size: 2rem;
+	font-weight: lighter;
+	line-height: 1.8;
+	padding: 1rem 0;
+	color: #eee;
+}
+
+.about .row 
+{
+	display: flex;
+	align-items: center;
+	background:grey;
+	flex-wrap: nowrap;
+}
+
+.about .row .image 
+{
+	flex: 1 0 45rem;
+}
+
+.about .row .image img
+{
+	width: 100%;
+
+}
+
+.about .row .content
+{
+	flex: 1 1 45rem;
+	padding: 2rem;
+}
+
+.about .row .content h3
+{
+	font-size: 3rem;
+	color: #fff;
+}
+
+.about .row .content p
+{
+	font-size: 1.6rem;
+	color: rgb(255, 255, 255);
+	padding: 1rem 0;
+	line-height: 1.8;
+}
+
+.author1 .row 
+{
+	display: flex;
+	align-items: center;
+	background:black;
+	flex-wrap: nowrap;
+}
+
+.author1 .row .image1 
+{
+	flex: 1 0 45rem;
+}
+
+.author1 .row .image1 img
+{
+	width:65%;
+
+}
+
+.author1 .row .content
+{
+	flex: 1 1 45rem;
+	padding: 2rem;
+}
+
+.author1 .row .content h3
+{
+	font-size: 3rem;
+	color: #fff;
+}
+
+.author1 .row .content p
+{
+	font-size: 1.6rem;
+	color: rgb(255, 255, 255);
+	padding: 1rem 0;
+	line-height: 1.8;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    padding:5rem;
+    text-align: center;
+    border:var(--border);    
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color:#fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color:#fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+
+.menu .box-container .box:hover{
+    background:grey;
+}
+
+.link a {
+	text-align: center;
+	color:aqua;
+	text-transform: uppercase;
+	padding-bottom: 3.5rem;
+	font-size: 2rem;
+}
+.contact .row 
+{
+	display: flex;
+	background: var(--color);
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:white;
+    border:white;
+}
+
+.contact .row form .inputBox span{
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+}
+
+
+.footer{
+    background:var(--color);
+    text-align: center;
+}
+
+
+.footer .credit{
+    font-size: 3rem;
+    color:rgb(0, 0, 0);
+    font-weight: lighter;
+    padding:1rem 0;
+}
+
+.footer .credit span{
+    color: black;
+}
+
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+@media (max-width:991px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+	
+	.header
+	{
+		padding: 1.5rem 2rem;
+	}
+	
+	section
+	{
+		padding: 2rem;
+	}
+}
+.btn
+{
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .9rem 3rem;
+	font-size: 1.7rem;
+	color:black;
+	background:#D9D9D9;
+	cursor: pointer;
+}
+
+@media (max-width:768px)
+{
+	#menu-btn
+	{
+		display: inline-block;
+	}
+	
+	.header .navbar
+	{
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background:dimgrey;
+		width: 30rem;
+		height: calc(100vh - 9.5rem);
+	}
+	
+	.header .navbar.active
+	{
+		right: 0;
+	}
+	
+	.header .navbar a
+	{
+		color: var(--color);
+		display: block;
+		margin: 1.5rem;
+		padding: .5rem;
+		font-size: 2rem;
+		
+	}
+	
+
+	.home
+	{
+		background-position: left;
+		justify-content: center;
+	}	
+	
+	.home .content h3
+	{
+		font-size: 4.5rem;
+		
+	}	
+	
+	.home .content p
+	{
+		font-size: 1.5rem;
+	}	
+}
+
+@media (max-width:450px)
+{
+	html
+	{
+		font-size: 50%;
+	}
+}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Luxury Cars Rental</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+</head>
+<body>
+
+	<header class="header">
+	
+		<nav class="navbar">
+			<a href="#home">home</a>
+			<a href="#about">about</a>
+			<a href="#author1">Team</a>
+			<a href="#menu">services</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">contact</a>
+		</nav>
+	
+		<div class="icons">
+			<div class="fas fa-bars" id="menu-btn"></div>
+		</div>
+		
+	</header>
+		
+	<section class="home" id="home">
+	
+		<div class="content">
+			<h3>LUXURY CARS RENTAL</h3>
+		</div>
+		
+	</section>
+	
+	<section class="about" id="about">
+		<h1 class="heading"> about </h1>
+		
+		<div class="row">
+			<div class="image">
+				<img style="float: right;" src="https://img.philkotse.com/2019/10/28/b7Fg1q9w/luxury-car-brands-1-e721.jpg" alt="">
+			</div>
+			
+			<div class="content">
+				<h3>Luxury Cars Rental</h3>
+				<p>The only luxury car rental company in the Philippines that allows people to experience riding a prestige vehicle for a short period of time.</p> 
+	
+			</div>
+		</div>
+
+        <section class="author1" id="author1">
+            <h1 class="heading"> Website authors </h1>
+            
+            <div class="row">
+                <div class="image1">
+                    <img style="float: right;" src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.6435-9/94670119_3260607654164323_7482706338217197568_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF2Rv61OMVR0S5zVO6iMdjK5Oov8V4EqxTk6i_xXgSrFB_DaBXtwhEyy9hX79MCWJUqVc868d_xLbPGP1PRt2n4&_nc_ohc=acr005PG8LkAX9yqHKB&_nc_ht=scontent.fmnl17-1.fna&oh=00_AT-BhZuuvAadWzrZVeoCfE8Tj14DGLxBhfLqy_wicPEYRA&oe=62FF6A8C" alt="">
+                </div>
+                
+                <div class="content">
+                    <h3>Carlos Gerald Sadaba</h3>
+                    <p>1st year College in FEU TECH taking up Bachelor of Science in Information Technology with Specialization in Web and Mobile Application</p> 
+        
+                </div>
+            </div>
+            <div class="row">
+                <div class="image1">
+                    <img style="float: right;" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/294195172_416109143913487_4040090736932640572_n.jpg?stp=dst-jpg_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeEWUitzn7N8QdqAWGlPnvHPQSYl469_sr1BJiXjr3-yvSngYxHSFsFraoXyQCYpfAL_GYtueog94JyRHJUbYY5W&_nc_ohc=6lz3DcOTOTsAX86Op5v&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIEmgMSNAKYOONFb5fmXsavae4htz4H8QWVRoe_-VKxIw&oe=62FC937E" alt="">
+                </div>
+                
+                <div class="content">
+                    <h3>Juwal Pepito</h3>
+                    <p>1st year College in FEU TECH taking up Bachelor of Science in Information Technology with Specialization in Web and Mobile Application</p> 
+        
+                </div>
+            </div>
+	
+	<section class="menu" id="menu">
+
+    <h1 class="heading"> SERVICES OFFERED</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://s1.cdn.autoevolution.com/images/news/all-new-rolls-royce-wraith-manifests-itself-in-digital-form-to-tease-the-bejesus-out-of-us-190548_1.jpg" alt="">
+            <h3>Rolls Royce Wraith</h3>
+            <div class="price">₱20,000 / day<span></span></div>
+            <a href="#" class="btn">Rent now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.topgear.com/sites/default/files/news-listicle/image/a80330.jpg?w=848&h=477" alt="">
+            <h3>Audi A8</h3>
+            <div class="price">₱25,000 / day<span></span></div>
+            <a href="#" class="btn">Rent now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.topgear.com/sites/default/files/news-listicle/image/bmw_750li_xdrive_19_0.jpg?w=848&h=477" alt="">
+            <h3>BMW 7-Series</h3>
+            <div class="price">₱30,000 / day<span></span></div>
+            <a href="#" class="btn">rent now</a>
+        </div>
+
+        <div class="box">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <h3>Porsche Panamera</h3>
+            <div class="price">₱28,000 / day <span></span></div>
+            <a href="#" class="btn">rent now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.topgear.com/sites/default/files/news-listicle/image/row09068.jpg?w=848&h=477" alt="">
+            <h3>Bently Continental GT</h3>
+            <div class="price">₱32,000 / day <span></span></div>
+            <a href="#" class="btn">rent now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/629a9b78906d4154a84fcbbd/2022-Land-Rover-Range-Rover-7/960x0.jpg?format=jpg&width=960" alt="">
+            <h3>Range Rover</h3>
+            <div class="price">₱26,000 / day<span></span></div>
+            <a href="#" class="btn">rent now</a>
+        </div>
+    </div>
+	<section class="portfolio" id="portfolio">
+	<h1 class="heading"> TEAM PORTFOLIO</h1>
+	<div class="link">
+	<a href="PORTFOLIO.html" target="_blank">CLICK THIS LINK TO SEE SADABA & PEPITO PORTFOLIO</a>
+	</div>
+	</section> 
+
+	<section class="contact" id="contact">
+		
+		<h1 class="heading"> contact us <h1>
+		
+		<div class="row">
+			
+			<form action="">
+				<h3></h3>
+				<div class="inputBox">
+					<span class="fas fa-user"></span>
+					<input type="text" placeholder="Name">
+				</div>
+				<div class="inputBox">
+					<span class="fas fa-envelope"></span>
+					<input type="email" placeholder="Email">
+				</div>
+				<div class="inputBox">
+					<span class="fas fa-phone"></span>
+					<input type="number" placeholder="Contact number">
+				</div>
+				<input type="submit" value="reach us" class="btn">
+			</form>
+		</div>
+	</section>
+	
+	</section>
+
+	<section class="footer">
+		
+		<div class="share">
+			<a href="https://www.facebook.com/juwalpepito/" target="_blank" class="fab fa-facebook-f"></a>
+			<a href="#https://www.facebook.com/juwalpepito/" class="fab fa-twitter"></a>
+			<a href="https://www.facebook.com/juwalpepito/" target="_blank" class="fab fa-instagram"></a>
+			<a href="https://www.facebook.com/juwalpepito/" class="fab fa-linkedin"></a>
+			<a href="https://www.facebook.com/juwalpepito/" class="fab fa-pinterest"></a>
+		</div>
+
+	</section>
+	
+<script>
+let navbar = document.querySelector('.navbar');
+
+document.querySelector("#menu-btn").onclick =() =>
+{
+	navbar.classList.toggle('active');
+	searchForm.classList.remove('active');
+}
+
+let searchForm = document.querySelector('.search-form');
+
+document.querySelector("#search-btn").onclick =() =>
+{
+	searchForm.classList.toggle('active');
+	navbar.classList.remove('active');
+}
+
+window.onscroll = () =>
+{
+	navbar.classList.remove('active');
+	searchForm.classList.remove('active');
+}
+
+</script>
+
+</body>
+</html>
